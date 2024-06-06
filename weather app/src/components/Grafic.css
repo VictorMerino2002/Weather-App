@@ -1,0 +1,19 @@
+.chart-container {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    padding: 15px;
+    border-radius: 1em;
+}
+
+.clear.actualWeather .chart-container {
+    background: linear-gradient(0deg,#4375b2ad, #5fa7fead);
+}
+
+.night.actualWeather .chart-container {
+    background: linear-gradient(45deg,#020e1ead, #07306aad);
+}
+
+.rain.actualWeather .chart-container {
+    background: linear-gradient(45deg,#141414ad, #8a8a8aad);;
+}

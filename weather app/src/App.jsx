@@ -6,6 +6,7 @@ import { useWeather } from "./hooks/useWeather"
 import { useForecastWeather } from "./hooks/useForecastWeather"
 import { CurrentWeather } from "./components/CurrentWeather"
 import { useLocation } from "./hooks/useLocation"
+import { Grafic } from "./components/Grafic"
 
 export const App = () => {
   const {location,setLocation,previousLocation, handleSubmit} = useLocation()
@@ -21,6 +22,7 @@ export const App = () => {
       {weather && weather.main && weather.weather && forecastWeather && forecastWeather.list ? (
         <>
           <CurrentWeather weather={weather} />
+          <Grafic forecastWeather={forecastWeather}/>
           <Forecast forecastWeather={forecastWeather} />
         </>
       ) : (
