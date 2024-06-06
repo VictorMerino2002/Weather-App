@@ -1,0 +1,68 @@
+:root {
+    --text-color : #ffffff9f;
+}
+
+.forecast {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    margin-top: 150px;
+    width:95%;
+}
+
+.forecast button {
+    border: none;
+    border-radius: 5em;
+    background: none;
+    font-size: 2em;
+    color: #00000077;
+    height: 100px;
+    width: 25px;
+}
+
+.forecast button:active {
+    color: #002f86d0;
+}
+
+.forecastDataContainer {
+    padding: 0 20px;
+    border-radius: 1em;
+    width: 100%;
+}
+
+.clear.actualWeather .forecastDataContainer {
+    background: linear-gradient(0deg,#4375b2ad, #5fa7fead);
+}
+
+.night.actualWeather .forecastDataContainer {
+    background: linear-gradient(45deg,#020e1ead, #07306aad);
+}
+
+.rain.actualWeather .forecastDataContainer {
+    background: linear-gradient(45deg,#141414ad, #8a8a8aad);;
+}
+
+.night.actualWeather .forecast button {
+    color: #fff;
+}
+
+.rain.actualWeather .forecast button {
+    color: #fff;
+}
+
+.forecastDataContainer h3 {
+    font-size: .7em;
+    border-bottom: 1px solid var(--text-color);
+    line-height: 25px;
+    color: var(--text-color);
+}
+
+.forecastData{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff98;
+}
