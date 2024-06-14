@@ -15,11 +15,14 @@ body {
     background: #111;
 }
 
+#root {
+    height: 100vh;
+    height: 100dvh;
+}
+
 @media (min-width : 450px){
     #root {
         max-width: 450px;
-        height: 100vh;
-        height: 100dvh;
         margin: auto;
     }
 }
