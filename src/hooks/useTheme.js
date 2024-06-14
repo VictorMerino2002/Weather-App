@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 export const useTheme = ({weather}) => {
-    const [themeClass, setThemeClass] = useState('')
+    const [themeClass, setThemeClass] = useState('clear')
 
     useEffect(() => {
         if (!weather) return

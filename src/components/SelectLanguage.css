@@ -1,0 +1,60 @@
+.settingsBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    color: var(--text-color);
+}
+
+.clear .settingsBtn {
+    background: var(--clear-color);
+}
+.night .settingsBtn {
+    background: var(--night-color);
+}
+.rain .settingsBtn {
+    background: var(--rain-color);
+}
+
+.selectLanguage {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 9999;
+    top: 25%;
+    padding: 20px;
+    border-radius: .4em;
+
+    > button {
+        border-radius: 4em;
+        color: var(--text-color);
+        border: 1px solid #fff;
+    }
+}
+
+.clear.selectLanguage {
+    background: linear-gradient(45deg,#4375b2, #5fa7fe);
+
+    > button {
+        background: var(--clear-color);
+    }
+}
+
+.night.selectLanguage {
+    background: linear-gradient(45deg,#020e1e, #07306a);
+
+    > button {
+        background: var(--night-color);
+    }
+}
+
+.rain.selectLanguage {
+    background: linear-gradient(45deg,#141414ad, #8a8a8a);
+
+    > button {
+        background: var(--rain-color);
+    }
+}

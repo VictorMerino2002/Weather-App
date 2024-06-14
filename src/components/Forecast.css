@@ -1,7 +1,3 @@
-:root {
-    --text-color : #ffffff9f;
-}
-
 .forecast {
     display: flex;
     align-items: center;
